@@ -196,7 +196,7 @@
       let imgImg = $(img).find('img:eq(0)').attr('src',videos[g].thumbnails[2].url);
       $(imgImg).click(function(){
         let ifrejm = $('<iframe width="196" height="110" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
-        ifrejm.attr('src','http://www.youtube.com/embed/'+videos[g].id+'?autoplay=1');
+        ifrejm.attr('src',location.protocol+'//www.youtube.com/embed/'+videos[g].id+'?autoplay=1');
         $(this).replaceWith(ifrejm);
         ifrejm.animate({
           width: 246+'px',
