@@ -47,8 +47,9 @@ class YtdlController extends Controller
         $url = $req->input('v');
 
         $test_url = getenv('YTDL_TEST_URL');
+        $app_env = getenv('APP_ENV');
 
-        if (!$url && !empty($test_url)) {
+        if (!$url && !empty($test_url) && $app_env !== 'production' && Auth::user() && Auth::user()->id === 1) {
           $url = $test_url;
         }
 
