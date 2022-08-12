@@ -24,6 +24,8 @@
 
   var q = function(data,callback = null) {
 
+    data._token = $('meta[name="csrf-token"]').attr('content');
+
     $.ajax({
       type: 'POST',
       url: "ytdl/"+data.get,
@@ -47,6 +49,10 @@
             data,callback
           )
         },1000);
+      },
+      always: function(res) {
+        el.debug.value = res.responseText;
+        el.debugHTML.innerHTML = res.responseText;
       },
       timeout: 3000
     });
@@ -175,6 +181,11 @@
     $('#' + validHash[i] + ' .url').html('<a href="'+$('#' + validHash[i] + ' .url').text()+'" target="_blank">'+requested[validHash[i]].title+'</a>');
 
     for (let g in videos) {
+
+      if ($('#' +  videos[g].id).length) {
+        continue;
+      }
+
       vid = $(el.videoExample)
         .clone()
         .attr('id',videos[g].id);

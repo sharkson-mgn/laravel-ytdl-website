@@ -5608,6 +5608,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
   var q = function q(data) {
     var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+    data._token = $('meta[name="csrf-token"]').attr('content');
     $.ajax({
       type: 'POST',
       url: "ytdl/" + data.get,
@@ -5630,6 +5631,10 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         setTimeout(function () {
           q(data, callback);
         }, 1000);
+      },
+      always: function always(res) {
+        el.debug.value = res.responseText;
+        el.debugHTML.innerHTML = res.responseText;
       },
       timeout: 3000
     });
@@ -5772,6 +5777,10 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     $('#' + validHash[i] + ' .url').html('<a href="' + $('#' + validHash[i] + ' .url').text() + '" target="_blank">' + requested[validHash[i]].title + '</a>');
 
     var _loop = function _loop(g) {
+      if ($('#' + videos[g].id).length) {
+        return "continue";
+      }
+
       vid = $(el.videoExample).clone().attr('id', videos[g].id);
       $(vid).find('.title').html('<a href="https://youtube.com/watch?v=' + videos[g].id + '" target="_blank">' + videos[g].title + '</a>');
       var img = $(el.imgExample).clone().removeAttr('id').show(); // let imgImg = $(img).find('iframe:eq(0)').attr('src','http://www.youtube.com/embed/'+videos[g].id);
@@ -5832,7 +5841,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     };
 
     for (var g in videos) {
-      _loop(g);
+      var _ret = _loop(g);
+
+      if (_ret === "continue") continue;
     }
   };
 
