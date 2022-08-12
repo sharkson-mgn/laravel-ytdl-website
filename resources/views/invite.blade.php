@@ -14,7 +14,7 @@
 
             {{ csrf_field() }}
             <input class="form-control" type="email" name="email" placeholder="example@email.com" required />
-            <button class="form-control btn btn-primary mt-1" type="submit">{{ _('Wyślij zaproszenie') }}</button>
+            <button class="form-control btn btn-primary mt-1" type="submit">{{ __('Wyślij zaproszenie') }}</button>
           </div>
         </form>
         @else
