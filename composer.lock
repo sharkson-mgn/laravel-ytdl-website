@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "brick/math",
-            "version": "0.10.1",
+            "version": "0.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "de846578401f4e58f911b3afeb62ced56365ed87"
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/de846578401f4e58f911b3afeb62ced56365ed87",
-                "reference": "de846578401f4e58f911b3afeb62ced56365ed87",
+                "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
+                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.10.1"
+                "source": "https://github.com/brick/math/tree/0.10.2"
             },
             "funding": [
                 {
@@ -60,7 +60,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-01T22:54:31+00:00"
+            "time": "2022-08-10T22:54:19+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -2938,12 +2938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sharkson-mgn/ytdlAdapter.git",
-                "reference": "9c7640625fd69d0140e6aca5cb8a193c7bea5db6"
+                "reference": "d908c6b759488b3723b7d3a7ba02f06fa65543e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sharkson-mgn/ytdlAdapter/zipball/9c7640625fd69d0140e6aca5cb8a193c7bea5db6",
-                "reference": "9c7640625fd69d0140e6aca5cb8a193c7bea5db6",
+                "url": "https://api.github.com/repos/sharkson-mgn/ytdlAdapter/zipball/d908c6b759488b3723b7d3a7ba02f06fa65543e1",
+                "reference": "d908c6b759488b3723b7d3a7ba02f06fa65543e1",
                 "shasum": ""
             },
             "require": {
@@ -2971,7 +2971,7 @@
                 "issues": "https://github.com/sharkson-mgn/ytdlAdapter/issues",
                 "source": "https://github.com/sharkson-mgn/ytdlAdapter/tree/main"
             },
-            "time": "2022-08-10T11:39:48+00:00"
+            "time": "2022-08-12T16:16:45+00:00"
         },
         {
             "name": "symfony/console",
