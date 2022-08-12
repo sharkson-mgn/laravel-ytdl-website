@@ -31,7 +31,11 @@ class InviteCreated extends Mailable
      */
     public function build()
     {
-        return $this->from('admin@sharkson.eu')
-                          ->view('emails.invite',['invite'=>$this->invite]);
+        return $this->view('emails.invite')
+                    ->subject("ytdl | Otrzymałeś zaproszenie!")
+                    ->from('admin@sharkson.eu')
+                    ->with([
+                      'invite'=>$this->invite
+                    ]);
     }
 }
