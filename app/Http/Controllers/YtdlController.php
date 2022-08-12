@@ -46,8 +46,10 @@ class YtdlController extends Controller
       if (Auth::check()) {
         $url = $req->input('v');
 
-        if (!$url && false) {
-          $url = 'https://www.youtube.com/watch?v=qW8270sfsxM&list=PLL8SN36XIUnYvT1jSyTLgX5gk9TYNduQL';
+        $test_url = getenv('YTDL_TEST_URL');
+
+        if (!$url && !empty($test_url)) {
+          $url = $test_url;
         }
 
         if (!empty($url))

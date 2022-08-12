@@ -45,11 +45,20 @@
   </div>
 
   <div class="container-fluid">
+
+    <div class="row justify-content-center">
+      <div class="col my-3">
+        <textarea class="form-control" rows="10" id="debug"></textarea>
+        <div id="debugHTML"></div>
+      </div>
+    </div>
+
     <div class="row justify-content-center">
       <div class="col mt-3">
         <textarea class="form-control" id="inputUrls" rows="3" placeholder="Paste url here..." style="resize: none;">{{ $url }}</textarea>
       </div>
     </div>
+
     <div class="row justify-content-center">
       <div class="col my-3">
         <div class="container-fluid" id="urls">
@@ -57,18 +66,12 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col my-3">
-        <textarea class="form-control" rows="10" id="debug"></textarea>
-        <div id="debugHTML"></div>
-      </div>
-    </div>
   </div>
 
   <div class="row justify-content-md-center">
-    <div class="col-9 border-top my-4 rounded-top text-center">
+    <div class="col-12 col-md-9 border-top my-4 rounded-top text-center">
       YouTube Downloader by mgn to darmowe narzędzie do pobierania materiałów z serwisu YouTube w wybranym formacie audio lub wideo.<br />
-      Narzędzie elitarne ponieważ nie posiada <u>żadnych</u> ograniczeń lecz dostępne jest tylko dla wybranych. Widzisz to więc jesteś <b style="color: gold;">VIP</b>.<br />trolllo
+      Narzędzie elitarne ponieważ nie posiada <u>żadnych</u> ograniczeń lecz dostępne jest tylko dla wybranych. Widzisz to więc jesteś <b style="color: gold;">VIP</b>.<br />
     </div>
   </div>
 
