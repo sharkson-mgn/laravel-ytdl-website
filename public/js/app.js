@@ -5980,7 +5980,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   if ($(el.textarea).length) {
     $(['.loader', el.urlExample, el.videoExample, el.imgExample]).hide();
     $([el.debug, el.debugHTML]).hide();
-    "keyup".split(" ").forEach(function (e) {
+    "keyup change".split(" ").forEach(function (e) {
       el.textarea.addEventListener(e, function () {
         textareaResize();
         checkTimeout = setTimeout(function () {

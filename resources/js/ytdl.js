@@ -422,7 +422,7 @@
     $(['.loader',el.urlExample,el.videoExample,el.imgExample]).hide();
     $([el.debug,el.debugHTML]).hide();
 
-    "keyup".split(" ").forEach(function(e){
+    "keyup change".split(" ").forEach(function(e){
       el.textarea.addEventListener(e,() => {
         textareaResize();
         checkTimeout = setTimeout(function() {
