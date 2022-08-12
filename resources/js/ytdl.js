@@ -132,7 +132,11 @@
   };
 
   exctratGetParams = function(url) {
-    let attrs = url.split('?')[1].split('&');
+    let attrs = url.split('?');
+    if (attrs.length <= 1) {
+      return {};
+    }
+    attr = attrs[1].split('&');
     let ret = {};
     for (let i in attrs) {
       let a = attrs[i].split('=');

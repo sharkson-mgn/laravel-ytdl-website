@@ -5722,7 +5722,13 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   };
 
   exctratGetParams = function exctratGetParams(url) {
-    var attrs = url.split('?')[1].split('&');
+    var attrs = url.split('?');
+
+    if (attrs.length <= 1) {
+      return {};
+    }
+
+    attr = attrs[1].split('&');
     var ret = {};
 
     for (var i in attrs) {
