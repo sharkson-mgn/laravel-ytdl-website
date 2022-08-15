@@ -1564,16 +1564,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "ed0ecc7f9b5c2f4a9872185846974a808a3b052a"
+                "reference": "81aea9e5217084c7850cd36e1587ee4aad721c6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/ed0ecc7f9b5c2f4a9872185846974a808a3b052a",
-                "reference": "ed0ecc7f9b5c2f4a9872185846974a808a3b052a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/81aea9e5217084c7850cd36e1587ee4aad721c6b",
+                "reference": "81aea9e5217084c7850cd36e1587ee4aad721c6b",
                 "shasum": ""
             },
             "require": {
@@ -1634,7 +1634,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.2.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.2.1"
             },
             "funding": [
                 {
@@ -1650,7 +1650,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-26T07:26:36+00:00"
+            "time": "2022-08-14T20:48:34+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -2938,12 +2938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sharkson-mgn/ytdlAdapter.git",
-                "reference": "101a86a6c56c0e5e12a996fe0c95ad77e088d51a"
+                "reference": "00b4337e9c73208be9793b332829cd4bdd5017f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sharkson-mgn/ytdlAdapter/zipball/101a86a6c56c0e5e12a996fe0c95ad77e088d51a",
-                "reference": "101a86a6c56c0e5e12a996fe0c95ad77e088d51a",
+                "url": "https://api.github.com/repos/sharkson-mgn/ytdlAdapter/zipball/00b4337e9c73208be9793b332829cd4bdd5017f0",
+                "reference": "00b4337e9c73208be9793b332829cd4bdd5017f0",
                 "shasum": ""
             },
             "require": {
@@ -2971,7 +2971,7 @@
                 "issues": "https://github.com/sharkson-mgn/ytdlAdapter/issues",
                 "source": "https://github.com/sharkson-mgn/ytdlAdapter/tree/main"
             },
-            "time": "2022-08-12T18:42:49+00:00"
+            "time": "2022-08-15T17:01:19+00:00"
         },
         {
             "name": "symfony/console",
