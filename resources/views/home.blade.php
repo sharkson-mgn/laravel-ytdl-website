@@ -68,11 +68,4 @@
     </div>
   </div>
 
-  <div class="row justify-content-md-center">
-    <div class="col-12 col-md-9 border-top my-4 rounded-top text-center">
-      YouTube Downloader by mgn to darmowe narzędzie do pobierania materiałów z serwisu YouTube w wybranym formacie audio lub wideo.<br />
-      Narzędzie elitarne ponieważ nie posiada <u>żadnych</u> ograniczeń lecz dostępne jest tylko dla wybranych. Widzisz to więc jesteś <b style="color: gold;">VIP</b>.<br />
-    </div>
-  </div>
-
 @endsection
